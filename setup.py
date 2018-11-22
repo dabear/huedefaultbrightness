@@ -2,21 +2,16 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup, find_packages
-setup(name='hueglucose',
+setup(name='huedefaultbrightness',
     version = '1.0.0',
-    url = 'https://github.com/dabear/hueglucose.git',
+    url = 'https://github.com/dabear/huedefaultbrightness.git',
     author = 'Bjorn Berg',
     author_email = 'bjorninges.spam@gmail.com',
-    description = 'Sets up a philips hue to display different lighting based on nightscout glucose values',
+    description = 'Sets up a philips hue to with a a brightnes similar to last time it was on',
     packages = find_packages(),
     install_requires=[
-        'python-nightscout',
         'phue',
         'pytz'
-    ],
-    dependency_links=[
-        'https://github.com/ps2/python-nightscout/tarball/master#egg=python-nightscout-1.0.0',
-        
     ],
     
 )
